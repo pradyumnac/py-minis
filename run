@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# 30 seconds of code
+# python -m doctest 30secondsofcode/01sorting.py
+# python -m doctest 30secondsofcode/02mergelist.py
+# python -m doctest 30secondsofcode/03fstrings.py
+
+CODEFILEPATH=$(find "./$1" -name "$2*.py")
+echo Running "$CODEFILEPATH"
+python -m doctest -v $CODEFILEPATH
