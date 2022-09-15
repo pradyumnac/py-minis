@@ -7,4 +7,4 @@
 
 CODEFILEPATH=$(find "./$1" -name "$2*.py")
 echo Running "$CODEFILEPATH"
-python -m doctest -v $CODEFILEPATH
+./.venv/scripts/python -m doctest -v $CODEFILEPATH
